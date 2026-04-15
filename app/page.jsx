@@ -90,8 +90,9 @@ export default function Home() {
             <a
               href="#work"
               style={{
-               background: "#d4a017",
-color: "#0f172a",
+               background: "transparent",
+color: "#f4d27a",
+border: "1px solid #f4d27a",
                 padding: "15px 22px",
                 borderRadius: 12,
                 textDecoration: "none",
