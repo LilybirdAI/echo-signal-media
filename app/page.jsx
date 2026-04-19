@@ -8,7 +8,7 @@ export default function Home() {
   };
 
   const sectionTitle = {
-    fontSize: 40,
+    fontSize: "clamp(30px, 5vw, 40px)",
     margin: "0 0 20px",
     color: "#f4d27a",
     letterSpacing: "-0.02em",
@@ -27,17 +27,17 @@ export default function Home() {
     {
       title: "Echo Signal Media Website",
       text: "Clean, modern brand site built to present services clearly and convert visitors into project inquiries.",
-      image: "/portfolio/echo-signal-portfolio.png",
+      image: "/portfolio/website-showcase.png",
     },
     {
       title: "App Store Submission Support",
       text: "Resolved submission blockers, polished flows, and helped apps move back into review cleanly.",
-      image: "/portfolio/echo-signal-portfolio.png",
+      image: "/portfolio/app-store-support.png",
     },
     {
       title: "Mobile MVP Builds",
       text: "Built and polished SwiftUI apps for real clients with a focus on speed, stability, and launch readiness.",
-      image: "/portfolio/echo-signal-portfolio.png",
+      image: "/portfolio/mobile-mvp-builds.png",
     },
   ];
 
@@ -75,7 +75,7 @@ export default function Home() {
 
           <h1
             style={{
-              fontSize: 68,
+              fontSize: "clamp(40px, 8vw, 68px)",
               lineHeight: 1.02,
               margin: "0 0 20px",
               fontWeight: 800,
@@ -88,7 +88,7 @@ export default function Home() {
 
           <p
             style={{
-              fontSize: 22,
+              fontSize: "clamp(18px, 3vw, 22px)",
               lineHeight: 1.7,
               color: "rgba(255,255,255,0.82)",
               maxWidth: 760,
@@ -142,7 +142,13 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <h2 style={sectionTitle}>What I Help With</h2>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0,1fr))", gap: 24 }}>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+              gap: 24,
+            }}
+          >
             {[
               {
                 title: "iOS App Development",
@@ -188,7 +194,14 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <h2 style={sectionTitle}>Why Clients Hire Me</h2>
 
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 18, fontSize: 18 }}>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: 18,
+              fontSize: 18,
+            }}
+          >
             {[
               "Fast communication and real problem solving",
               "Clean execution without overcomplicating the project",
@@ -208,7 +221,13 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <h2 style={sectionTitle}>Selected Work</h2>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0,1fr))", gap: 24 }}>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: 24,
+            }}
+          >
             {portfolioItems.map((item) => (
               <article
                 key={item.title}
@@ -223,7 +242,8 @@ export default function Home() {
                   alt={item.title}
                   style={{
                     width: "100%",
-                    height: 220,
+                    height: "auto",
+                    aspectRatio: "16 / 10",
                     objectFit: "cover",
                     display: "block",
                     borderBottom: "1px solid rgba(212,160,23,0.18)",
@@ -231,7 +251,15 @@ export default function Home() {
                 />
 
                 <div style={{ padding: 24 }}>
-                  <h3 style={{ fontSize: 26, margin: "0 0 10px" }}>{item.title}</h3>
+                  <h3
+                    style={{
+                      fontSize: "clamp(24px, 4vw, 26px)",
+                      lineHeight: 1.15,
+                      margin: "0 0 10px",
+                    }}
+                  >
+                    {item.title}
+                  </h3>
                   <p style={{ color: "rgba(255,255,255,0.75)", lineHeight: 1.7, margin: 0 }}>
                     {item.text}
                   </p>
@@ -267,7 +295,7 @@ export default function Home() {
             Let’s Work
           </div>
 
-          <h2 style={{ fontSize: 44, margin: "0 0 12px" }}>
+          <h2 style={{ fontSize: "clamp(32px, 6vw, 44px)", margin: "0 0 12px" }}>
             Need something built, fixed, or submitted?
           </h2>
 
