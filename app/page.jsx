@@ -184,32 +184,6 @@ border: "1px solid #f4d27a",
             ))}
           </div>
         </div>
-      </section>
-
-      export default function Home() {
-  const cardStyle = {
-    background: "rgba(255,255,255,0.03)",
-    border: "1px solid rgba(212,160,23,0.18)",
-    borderRadius: 20,
-    padding: 28,
-    boxShadow: "0 10px 30px rgba(0,0,0,0.18)",
-  };
-
-  const sectionTitle = {
-    fontSize: 40,
-    margin: "0 0 20px",
-    color: "#f4d27a",
-    letterSpacing: "-0.02em",
-  };
-
-  const chipStyle = {
-    background: "rgba(212,160,23,0.12)",
-    border: "1px solid rgba(212,160,23,0.28)",
-    padding: "8px 12px",
-    borderRadius: 999,
-    fontSize: 13,
-    color: "#f4d27a",
-  };
 
   return (
     <main
