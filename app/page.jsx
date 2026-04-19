@@ -83,7 +83,7 @@ export default function Home() {
               letterSpacing: "-0.04em",
             }}
           >
-            Apps built. Bugs fixed. App Store submissions handled.
+            Apps and websites built, fixed, and shipped.
           </h1>
 
           <p
@@ -95,12 +95,12 @@ export default function Home() {
               margin: "0 0 28px",
             }}
           >
-            I help founders launch, fix, and ship iOS and web apps without getting stuck in technical chaos.
+            I build apps and websites, clean up broken experiences, and help projects get across the finish line.
           </p>
 
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 30 }}>
-            <span style={chipStyle}>SwiftUI + iOS</span>
-            <span style={chipStyle}>Web Apps + Backend</span>
+            <span style={chipStyle}>SwiftUI Apps</span>
+            <span style={chipStyle}>Modern Websites</span>
             <span style={chipStyle}>App Store + TestFlight</span>
           </div>
 
@@ -155,12 +155,12 @@ export default function Home() {
                 text: "SwiftUI apps, bug fixes, feature work, polish, and shipping.",
               },
               {
-                title: "Web App to Mobile",
-                text: "Convert web apps into iOS apps with a clean submission flow and production-ready structure.",
+                title: "Website Design + Build",
+                text: "Modern websites built to look sharp, read clearly, and turn visitors into real inquiries.",
               },
               {
-                title: "Backend + Launch Support",
-                text: "Supabase, APIs, auth, App Store Connect, TestFlight, and review fixes.",
+                title: "App Store + Launch Support",
+                text: "App Store Connect, TestFlight, submission fixes, and launch cleanup when projects get stuck.",
               },
             ].map((item) => (
               <article key={item.title} style={cardStyle}>
@@ -206,7 +206,7 @@ export default function Home() {
               "Fast communication and real problem solving",
               "Clean execution without overcomplicating the project",
               "Real App Store submission and review-fix experience",
-              "I handle the technical side so clients can focus on the business",
+              "Strong presentation for both apps and websites",
             ].map((line) => (
               <div key={line} style={{ display: "flex", gap: 12 }}>
                 <span style={{ color: "#d4a017", fontWeight: 700 }}>◆</span>
@@ -296,7 +296,7 @@ export default function Home() {
           </div>
 
           <h2 style={{ fontSize: "clamp(32px, 6vw, 44px)", margin: "0 0 12px" }}>
-            Need something built, fixed, or submitted?
+            Need an app or website built, fixed, or polished?
           </h2>
 
           <p
